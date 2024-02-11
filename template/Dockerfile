@@ -5,7 +5,7 @@ FROM python:alpine
 WORKDIR /prediction_app
 
 # Copy the current directory contents into the container at /app
-COPY . /prediction_app
+COPY template/ .
 
 # Install any needed dependencies specified in requirements.txt
 RUN apk add --no-cache gcc g++ musl-dev
