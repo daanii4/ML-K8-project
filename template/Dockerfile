@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.11-slim
+FROM python:alpine
 
 # Set the working directory in the container
 WORKDIR /prediction_app
@@ -8,6 +8,7 @@ WORKDIR /prediction_app
 COPY . /prediction_app
 
 # Install any needed dependencies specified in requirements.txt
+RUN apk add --no-cache gcc g++ musl-dev
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Make port 80 available to the world outside this container
