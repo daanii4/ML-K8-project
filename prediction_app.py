@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import joblib
 import numpy as np
 
-prediction_app = Flask(__name__, template_folder= 'C:\\Users\\danie\\AI\\template')
+prediction_app = Flask(__name__, template_folder= 'C:\\Users\\danie\\AI\\ML-K8-project\\template')
 
 # Load the pre-trained machine learning model
 model = joblib.load("model_joblib.pkl")
