@@ -13,6 +13,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: service/ingress-nginx-controller-admission
+            name: ingress-nginx-controller
             port:
               number: 443
+
