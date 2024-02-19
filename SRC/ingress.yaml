@@ -16,5 +16,5 @@ spec:
           service:
             name: prediction-app-service
             port:
-              number: 90
+              number: 5000
 
