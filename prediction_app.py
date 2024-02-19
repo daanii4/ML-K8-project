@@ -9,7 +9,7 @@ model = joblib.load("model_joblib.pkl")
 
 # Render the home page with a form to input data
 @prediction_app.route("/")
-def home():
+def home( ):
     return render_template("index.html")
 
 # Handle the form submission and make predictions
