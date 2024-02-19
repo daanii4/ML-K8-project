@@ -12,9 +12,10 @@ spec:
       paths:
       - path: /
         pathType: Prefix
-        backend: 
+        backend:
           service:
             name: prediction-app-service
             port:
               number: 5000
+
 
